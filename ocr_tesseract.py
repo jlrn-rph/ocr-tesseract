@@ -21,7 +21,7 @@ result = pytesseract.image_to_string(img)
 translate = Translator()
 
 # translates text into French
-translate_to_french = translate.translate(result, dest='chinese')
+translate_to_filipino = translate.translate(result, dest='filipino')
 
 # converts the result into string
-translated = str(translate_to_french.text)
+translated = str(translate_to_filipino.text)
